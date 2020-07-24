@@ -20,9 +20,7 @@ function render() {
   let container = document.getElementById('container');
   container.textContent = store.getState().count;
 };
- 
-let store = createStore();
-store.dispatch({ type: '@@INIT' });
+
 let button = document.getElementById('button');
  
 button.addEventListener('click', () => {
